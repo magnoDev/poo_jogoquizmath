@@ -9,6 +9,9 @@ package jogo;
  *
  * @author magno
  */
+
+import javax.swing.JOptionPane;
+
 public class Jogo {
 
     /**
@@ -16,6 +19,19 @@ public class Jogo {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        
+        int continuar;
+        
+        
+       continuar = JOptionPane.showConfirmDialog(null, "Vamos começar?");
+
+        
+        while (continuar == JOptionPane.YES_OPTION){
+            Questao novaQuestao = new Questao();
+            novaQuestao.criaPerguntaRandom();
+            continuar = JOptionPane.showConfirmDialog(null, "Quer continuar?");
+        }
+
     }
     
 }
