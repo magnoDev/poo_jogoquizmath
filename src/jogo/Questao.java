@@ -73,8 +73,8 @@ public class Questao {
     }
     
     public void criaPerguntaMultiplicacao(){
-        setOperador1(ThreadLocalRandom.current().nextInt(0, 100));
-        setOperador2(ThreadLocalRandom.current().nextInt(0, 20));
+        setOperador1(ThreadLocalRandom.current().nextInt(0, 10));
+        setOperador2(ThreadLocalRandom.current().nextInt(0, 10));
         
         String resposta = JOptionPane.showInputDialog("Quanto é "+getOperador1()+"*"+getOperador2()+"?", JOptionPane.QUESTION_MESSAGE);
         
